@@ -2,6 +2,8 @@
         padding: 0;
         box-sizing: border-box;
         margin: 0;
+        background-image: url("https://www.nawpic.com/media/2020/anime-school-background-nawpic-1.jpg");
+        background-size: cover;
     }
 
     .container-img {
@@ -39,9 +41,14 @@
     h1, h2 {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         text-align: center;
+        color: aliceblue;
     }
 
     @media screen and (max-width: 400px) {
+        body {
+            transition: all 0.5s ease;
+        }
+        
         h1, h2 {
             font-size: 1.2rem;
         }
@@ -49,5 +56,20 @@
         .container-img > .images > img {
             width: 12rem;
             height: 12rem;
+        }
+    }
+
+    @media screen and (max-width: 200px) {
+        body {
+            transition: all 0.5s ease;
+        }
+       
+        h1, h2 {
+            font-size: .6rem;
+        }
+
+        .container-img > .images > img {
+            width: 9rem;
+            height: 9rem;
         }
     }
